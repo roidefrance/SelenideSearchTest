@@ -16,6 +16,8 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-task DragAndDrop (type: Test) {
-    useJUnitPlatform ()
+task SelenideSearchTest (type: Test) {
+    useJUnitPlatform {
+
+    }
 }
