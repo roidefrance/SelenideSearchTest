@@ -16,8 +16,6 @@ tasks.withType(JavaCompile) {
     options.encoding = 'UTF-8'
 }
 
-task SelenideSearchTest (type: Test) {
-    useJUnitPlatform {
-
-    }
+test {
+    useJUnitPlatform ()
 }
