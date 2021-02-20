@@ -8,7 +8,7 @@ import static com.codeborne.selenide.Selectors.byName;
 import static com.codeborne.selenide.Selenide.$;
 import static com.codeborne.selenide.Selenide.open;
 
-public class SelenideSearchTest {
+public class SelenideGoogleSearchTest {
 
     @Test
     void GoogleSearch() {

@@ -11,7 +11,7 @@ public class SelenideYandexSearchTest {
     @Test
     void selenideYandexSearchTest() {
         open("https://yandex.ru/");
-        $("#text").setValue("Selenide").pressEnter();
+        $("#text").val("Selenide").pressEnter();
         // assert
         $("#search-result").shouldHave(Condition.text("Selenide"));
     }
