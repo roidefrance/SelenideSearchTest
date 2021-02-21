@@ -18,5 +18,4 @@ public class SelenideGoogleSearchTest {
         $(byName("q")).setValue("Selenide").pressEnter();
         $("#search").shouldHave(text("selenide.org"));
     }
-
 }
