@@ -14,5 +14,6 @@ public class SelenideYandexSearchTest {
         $("#text").val("Selenide").pressEnter();
         // assert
         $("#search-result").shouldHave(Condition.text("Selenide"));
+        $("search-result").shouldBe(Condition.visible);
     }
 }
