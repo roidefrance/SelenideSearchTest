@@ -16,9 +16,12 @@ public class SelenideGoogleSearchTest {
     void GoogleSearch() {
         open("https://www.google.com/");
         $(byName("q")).setValue("Selenide").pressEnter();
-        $("#search").shouldBe(visible);
         $("#search").shouldHave(text("selenide.org"));
-        $(By.linkText("selenide.ord")).click();
     }
-
+    @Test
+    void GoogleSecondSearch() {
+        open("https://www.google.com/");
+        $(byName("q")).setValue("Selenide").pressEnter();
+        $("#search").shouldHave(text("selenide.org"));
+    }
 }
