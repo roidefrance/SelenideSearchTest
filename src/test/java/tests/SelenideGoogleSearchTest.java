@@ -15,7 +15,7 @@ public class SelenideGoogleSearchTest {
     @Test
     void GoogleSearch() {
         open("https://www.google.com/");
-        $(byName("q")).setValue("Selenide").pressEnter();
+        $(byName("q")).val("Selenide").pressEnter();
         $("#search").shouldHave(text("selenide.org"));
     }
 }
